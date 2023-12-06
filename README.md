@@ -1,7 +1,7 @@
 # CapstoneProject
  Capstone project for GFA
 
- Could not upload the model for now since it exceeds the 100 MB limit.
+ Could not upload the player model for now since it exceeds the 100 MB limit.
 
 Trying to make a full TPS game where player defends a military base against intruders.
 
