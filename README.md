@@ -9,10 +9,14 @@ Done by 06.12.2023, 5:51 AM
 ----
 Weapon, weapon damage, ammunition, ammunition collectables, player movement, ammo motion, reload
 
-Done by 11.12.2020, 4:51 PM
+Done by 11.12.2023, 4:51 PM
 ----
 Grenade and grenade effects, muzzle for weapon fire, hp systems, primitive UI showing how many ammos and grenades left
 
+Done by 12.12.2023, 02:54 AM
+----
+environment and textures
+
 Will be added
 ----
-Enemies, enemy AI, environment and textures, UI and main menu
+Enemies, enemy AI, UI and main menu
