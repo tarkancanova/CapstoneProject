@@ -8,6 +8,11 @@ TagManager:
   - Magazine
   - Damage Boost
   - Grenade
+  - Bullet
+  - Grenade Collectible
+  - Hand
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,7 +20,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Post Processing
   - 
   - 
   - 

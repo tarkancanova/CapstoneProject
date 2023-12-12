@@ -7,6 +7,7 @@ public class SwitchCam : MonoBehaviour
 {
     private PlayerActions playerActions;
     [SerializeField] CinemachineVirtualCamera aimCamera;
+    [SerializeField] CinemachineVirtualCamera TPSCam;
 
     private void Awake()
     {
@@ -26,11 +27,16 @@ public class SwitchCam : MonoBehaviour
 
     private void SwitchToTPS()
     {
+        aimCamera.gameObject.SetActive(false);
         aimCamera.Priority = 9;
+        TPSCam.gameObject.SetActive(true);
+        
     }
 
     private void SwitchToAim()
     {
+        aimCamera.gameObject.SetActive(true);
         aimCamera.Priority = 11;
+        TPSCam.gameObject.SetActive(false);
     }
 }

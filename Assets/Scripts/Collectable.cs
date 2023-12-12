@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Collectable : MonoBehaviour
 {
-    private Weapon weapon;
+    private PlayerInventory _inventory;
 
 
     private void Awake()
     {
-        weapon = GameObject.FindWithTag("Weapon").GetComponent<Weapon>();
+        _inventory = GameObject.FindWithTag("Player").GetComponent<PlayerInventory>();
     }
 
 
@@ -21,14 +22,17 @@ public class Collectable : MonoBehaviour
             {
                 if (other.CompareTag("Player"))
                 {
-                    weapon.ammoInPockets += 10;
+                    _inventory.ammoInPockets += 10;
                     Destroy(this.gameObject);
                 }
             }
-            if (this.gameObject.CompareTag("Grenade"))
+            if (this.gameObject.CompareTag("Grenade Collectible"))
             {
-                Destroy(this.gameObject);
-                //grenade.grenadeAmount += 1;
+                if (other.CompareTag("Player"))
+                {
+                    Destroy(this.gameObject);
+                    _inventory.grenadeAmount += 1;
+                }
             }
         }
     }
