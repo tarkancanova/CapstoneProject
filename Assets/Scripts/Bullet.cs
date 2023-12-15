@@ -11,14 +11,4 @@ public class Bullet : MonoBehaviour
     {
         _weapon = GameObject.FindWithTag("Weapon").GetComponent<Pistol>();
     }
-
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.TryGetComponent<HealthSystem>(out HealthSystem healthSystem))
-        {
-            isShot = true;
-        }
-            
-    }
 }
