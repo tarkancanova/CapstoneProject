@@ -1,5 +1,5 @@
 # CapstoneProject
- Capstone project for GFA
+ Capstone project for Skilled HUB
 
 Could not upload the player model for now since it exceeds the 100 MB limit.
 
