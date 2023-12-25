@@ -12,12 +12,17 @@ public class HealthSystem : MonoBehaviour, IDamageable
     private const int _BARRELHEALTH = 1;
     public bool alive = true;
     private Pistol _weapon;
+    private Loot _loot;
 
 
     private void Awake()
     {
         SetHealth();
         _weapon = GameObject.FindWithTag("Weapon").GetComponent<Pistol>();
+        if (!CompareTag("Player"))
+        {
+            _loot = GetComponent<Loot>();
+        }
         
     }
 
@@ -64,7 +69,10 @@ public class HealthSystem : MonoBehaviour, IDamageable
                 SceneManager.LoadScene(1);
             }
             else if (gameObject.CompareTag("Enemy") || gameObject.CompareTag("Barrel"))
+            {
                 Destroy(gameObject);
+                _loot.LootDrop();
+            }
         }
     }
 }
