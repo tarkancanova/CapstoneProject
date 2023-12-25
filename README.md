@@ -1,5 +1,5 @@
 # CapstoneProject
- Capstone project for GFA
+ Capstone project for Skilled HUB
 
 Could not upload the player model for now since it exceeds the 100 MB limit.
 
@@ -17,6 +17,9 @@ Done by 12.12.2023, 02:54 AM
 ----
 environment and textures
 
-Will be added
+Done by 15.12.2023, 04:14 AM
 ----
 Enemies, enemy AI, UI and main menu
+
+
+----Project is done and no further improvements will be implemented.----
