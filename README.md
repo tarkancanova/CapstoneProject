@@ -22,4 +22,4 @@ Done by 15.12.2023, 04:14 AM
 Enemies, enemy AI, UI and main menu
 
 
-----Project is done and no further improvements will be implemented.----
+----Project is not done and instead of FindWithTag etc. Zenject will be implemented, also improvements on aim and AI will be implemented.----
